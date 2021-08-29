@@ -4,6 +4,8 @@ import { ArticleComponent } from './article/article.component';
 import { OperationstockComponent } from './operationstock/operationstock.component';
 import { StockComponent } from './stock.component';
 import { StockRoutingModule } from './stock-routing.module';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -15,6 +17,8 @@ import { StockRoutingModule } from './stock-routing.module';
   ],
   imports: [
     CommonModule,
+    HttpClientModule,
+    FormsModule,
     StockRoutingModule
   ]
 })
