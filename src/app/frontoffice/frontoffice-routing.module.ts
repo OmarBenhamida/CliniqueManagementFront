@@ -7,14 +7,10 @@ import { LoginComponent } from './login/login.component';
 import { FrontofficeComponent } from './frontoffice.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '', pathMatch: 'full'},
- // { path: 'login', loadChildren: () => import('./login/login.module').then(m => m.LoginModule), },
- 
-
+  //{ path: '', redirectTo: '', pathMatch: 'full'},
   {
     path: '', component: FrontofficeComponent,
     children: [
-      { path: '', redirectTo: 'login', pathMatch: 'full' },
       { path: 'dm', component: DossiermedicalComponent },
 
       { path: 'login', component: LoginComponent },
